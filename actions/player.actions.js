@@ -27,7 +27,7 @@ const getVideoURL = () => dispatch => {
 
   return fetch('https://dev.tso.com/get_video_url.php')
     .then( res => {
-      console.log(res);
+      // console.log(res);
 
       if ( res.status >= 400 ) {
         dispatch(failApiRequest());
@@ -36,7 +36,7 @@ const getVideoURL = () => dispatch => {
       return res.json();
     })
     .then( json => {
-      console.log(json);
+      // console.log(json);
 
       dispatch(successApiRequest(json.url));
     })

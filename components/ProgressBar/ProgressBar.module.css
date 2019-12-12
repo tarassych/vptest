@@ -1,0 +1,41 @@
+.ProgressBarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+}
+
+.ProgressBarContainer>div {
+  margin: 1em 0;
+  height: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProgressBarContainer>div label {
+  position: relative;
+  z-index: 10;
+}
+
+.ProgressBarContainer .DurationBar {
+  background-color: darkgrey;
+  width: 100%;
+  color: #fff;
+}
+
+.ProgressBarContainer .PositionBar {
+  background-color: lightblue;
+  width: 100%;
+  color: #fff;
+}
+
+.ProgressBarContainer .PositionBar .Progress{
+  background-color: darkblue;
+  
+  z-index: 1;
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%;
+}

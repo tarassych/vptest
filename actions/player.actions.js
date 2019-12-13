@@ -25,7 +25,7 @@ const successApiRequest = (url) => {
 const getVideoURL = () => dispatch => {
   dispatch(startApiRequest());
 
-  return fetch('https://dev.tso.com/get_video_url.php')
+  return fetch('https://dev.tso.com/get_video_url.php?timestamp='+Date.now())
     .then( res => {
       // console.log(res);
 

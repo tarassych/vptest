@@ -26,12 +26,27 @@
 }
 
 .ProgressBarContainer .PositionBar {
+  background-color: lightgreen;
+  width: 100%;
+  color: #fff;
+}
+
+.ProgressBarContainer .BufferBar {
   background-color: lightblue;
   width: 100%;
   color: #fff;
 }
 
 .ProgressBarContainer .PositionBar .Progress{
+  background-color: darkgreen;
+
+  z-index: 1;
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%;
+}
+
+.ProgressBarContainer .Canvas {
   background-color: darkblue;
   
   z-index: 1;
